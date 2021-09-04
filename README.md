@@ -12,10 +12,11 @@ To create form using **FormCreator** you must use this rules:
     <div>
       <FormCreator name={["User Name", "Password"]}
           error="You should use only EN sumbols"
-          valueHandler={onChangeValue}
+          valueHandler={valueHandler}
           btnName="Log in"
        />
     </div>
+In valueHandler callback function form return array of values
 
 ### Use InputFieldComponent to initial input field. 
 To initial input you must use this rules:
