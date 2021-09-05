@@ -20,17 +20,13 @@ In valueHandler callback function form return array of values
 
 ### Use InputFieldComponent to initial input field. 
 To initial input you must use this rules:
-- You must give *name as props*. Name string can be empty
-- You must give *function onDisableHandler as props*. That can be simple arrow function
-- You must give *boolean value as props* is button clicked. Value should be **true** else input didn't get value back
+- You can give *name as props*. Otherwise name string will be empty
 - You must give *function sendData as props*. This prop same with *valueHandler* - which will collect value from input.
 
 #### Example of use:
     <div>
-      <InputFieldComponent name={""}
+      <InputFieldComponent name={"Search"}
           sendData={searchedUsersById}
-          onDisableHandler={() => ""}
-          isBtnClicked={true}
         />
     </div>
 
